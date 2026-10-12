@@ -37,7 +37,7 @@ The stack is three services: Open WebUI, LiteLLM and Postgres.
 
 ### Implementation Details
 
-**Create the admin account first.** Open the Open WebUI service's Railway domain as soon as the deploy is green and sign up: the first account becomes the admin. Until then anyone who finds the URL could claim it. Later sign-ups land as "pending" until an admin approves them (Admin Panel > Users), and sign-ups can be turned off entirely in Admin Settings.
+**Create the admin account first.** Open the Open WebUI service's Railway domain as soon as the deploy is green and sign up: the first account becomes the admin. Until then anyone who finds the URL could claim it. Open WebUI then switches public sign-up off: add teammates in Admin Panel > Users, or turn sign-up back on in Admin Settings > General (new accounts wait as "pending" until you approve them).
 
 **Add your first model.** Open the LiteLLM service's domain at `/ui` and log in with username `admin` and the `LITELLM_MASTER_KEY` value (LiteLLM service > Variables). Under Models, add a model: pick a provider and model, paste the provider key (or leave the key empty if you set that provider's key as a variable on the LiteLLM service, e.g. `OPENAI_API_KEY`), and save. Choosing a wildcard such as "All OpenAI models" adds a whole provider at once. Reload Open WebUI and the model is in the model picker.
 
@@ -51,7 +51,7 @@ The stack is three services: Open WebUI, LiteLLM and Postgres.
 
 **Single instance.** Open WebUI runs as one replica. Running several replicas needs Redis for websockets (`REDIS_URL`, `WEBSOCKET_MANAGER=redis`) and shared storage, which this template leaves out to stay lean.
 
-**Resources.** In testing the stack idled at about 1 GB of RAM (Open WebUI 550–650 MB with its local embedding model loaded, LiteLLM about 400 MB, Postgres about 50 MB), so use the Hobby plan or above.
+**Resources.** On Railway the stack idled at about 1.8 GB of RAM: Open WebUI about 890 MB (it keeps the local embedding model for document search loaded), LiteLLM about 820 MB and Postgres about 60 MB. Both apps need more than the Trial plan's 512 MB per service, so use the Hobby plan or above.
 
 ## Why Deploy Open WebUI + LiteLLM on Railway?
 

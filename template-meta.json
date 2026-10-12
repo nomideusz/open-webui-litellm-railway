@@ -6,5 +6,6 @@
   "image": "https://raw.githubusercontent.com/nomideusz/open-webui-litellm-railway/main/icon.svg",
   "card_desc": "Open WebUI in front of a LiteLLM gateway: a ChatGPT-style workspace for your team, with models from OpenAI, Anthropic, OpenRouter and 100+ providers, virtual keys and spend tracking, on Postgres.",
   "deploy_marker": "nomideusz/open-webui-litellm-railway",
-  "id": "4bb0c250-f4a0-4106-be98-684ba50b417f"
+  "id": "4bb0c250-f4a0-4106-be98-684ba50b417f",
+  "published": true
 }

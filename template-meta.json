@@ -1,0 +1,9 @@
+{
+  "name": "Open WebUI + LiteLLM | Team ChatGPT with an AI Gateway",
+  "short_name": "Open WebUI LiteLLM",
+  "description": "Team ChatGPT-style UI with a LiteLLM gateway for 100+ model providers",
+  "category": "AI/ML",
+  "image": "https://raw.githubusercontent.com/nomideusz/open-webui-litellm-railway/main/icon.svg",
+  "card_desc": "Open WebUI in front of a LiteLLM gateway: a ChatGPT-style workspace for your team, with models from OpenAI, Anthropic, OpenRouter and 100+ providers, virtual keys and spend tracking, on Postgres.",
+  "deploy_marker": "nomideusz/open-webui-litellm-railway"
+}

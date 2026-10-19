@@ -33,7 +33,7 @@ The stack is three services: Open WebUI, LiteLLM and Postgres.
 - [LiteLLM proxy documentation](https://docs.litellm.ai/docs/simple_proxy)
 - [Open WebUI on GitHub](https://github.com/open-webui/open-webui)
 - [LiteLLM on GitHub](https://github.com/BerriAI/litellm)
-- [Template source on GitHub](https://github.com/nomideusz/open-webui-litellm-railway)
+- [Template source on GitHub](https://github.com/two-workspaces/open-webui-litellm)
 
 ### Implementation Details
 

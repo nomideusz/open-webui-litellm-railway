@@ -1,7 +1,7 @@
 {
   "services": {
     "3b56cc11-7d8d-4b32-97be-e40c98f7142a": {
-      "icon": "https://raw.githubusercontent.com/nomideusz/open-webui-litellm-railway/main/icon.svg",
+      "icon": "https://raw.githubusercontent.com/two-workspaces/open-webui-litellm/main/icon.svg",
       "name": "Open WebUI",
       "build": {},
       "deploy": {
@@ -67,7 +67,7 @@
       }
     },
     "a0878fd2-5b35-424a-91d3-58503d873cce": {
-      "icon": "https://raw.githubusercontent.com/nomideusz/open-webui-litellm-railway/main/litellm.png",
+      "icon": "https://raw.githubusercontent.com/two-workspaces/open-webui-litellm/main/litellm.png",
       "name": "LiteLLM",
       "build": {},
       "deploy": {

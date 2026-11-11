@@ -77,7 +77,7 @@
         "restartPolicyMaxRetries": 10
       },
       "source": {
-        "image": "ghcr.io/berriai/litellm:v1.105.0"
+        "image": "ghcr.io/berriai/litellm:v1.108.5"
       },
       "networking": {
         "serviceDomains": {

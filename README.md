@@ -8,7 +8,7 @@
 
 The stack is three services: Open WebUI, LiteLLM and Postgres.
 
-- **Upstream images, pinned.** Open WebUI runs from `ghcr.io/open-webui/open-webui:v0.12.4` (the plain image, no bundled Ollama) and LiteLLM from `ghcr.io/berriai/litellm:v1.105.0`, its current stable release. A redeploy never pulls an untested version; upgrading is bumping the tag.
+- **Upstream images, pinned.** Open WebUI runs from `ghcr.io/open-webui/open-webui:v0.12.4` (the plain image, no bundled Ollama) and LiteLLM from `ghcr.io/berriai/litellm:v1.108.5`, its current stable release. A redeploy never pulls an untested version; upgrading is bumping the tag.
 - **Wired over the private network.** Open WebUI talks to LiteLLM at its private address using LiteLLM's master key, so no model traffic leaves Railway's network between the two.
 - **Models are managed in LiteLLM.** `STORE_MODEL_IN_DB` is on, so you add models, provider keys, virtual keys and budgets in the LiteLLM admin UI; they are stored in Postgres, and provider keys are encrypted with a generated salt key.
 - **One Postgres, two databases.** Open WebUI keeps users, chats and settings in the `openwebui` database; LiteLLM keeps models, keys and spend logs in its own `litellm` database, created on Postgres's first boot. Both run their migrations on start.
